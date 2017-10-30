@@ -12,4 +12,10 @@
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
+# Intellij
+.idea/
+*.iml
+*.iws
 
+# Mac
+.DS_Store
