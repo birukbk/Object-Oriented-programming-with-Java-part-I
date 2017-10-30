@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="testrunner">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/testrunner/gson-2.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/testrunner/junit-4.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/testrunner/tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/testrunner/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/testrunner/tmc-junit-runner.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
