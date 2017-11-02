@@ -6,6 +6,7 @@ public class FromHundredToOne {
         while (number <= 100 && number>0){
             System.out.println(number);
             number--;
+
         }
     }
 }

@@ -14,6 +14,7 @@ public class UpToCertainNumber {
         while (upToNumber>=number){
             System.out.println(number);
             number++;
+
         }
 
     }
