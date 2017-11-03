@@ -1,6 +1,11 @@
 public class Printing {
 
     public static void printStars(int amount) {
+        int i =0;
+        while (i<amount){
+            System.out.print("*");
+            i++;
+        }
         // 39.1
         // you can print one star with the command
         // System.out.print("*");
@@ -8,6 +13,13 @@ public class Printing {
     }
 
     public static void printSquare(int sideSize) {
+        int i = 0;
+        while (i<sideSize){
+            printStars(4);
+            System.out.println("");
+            i++;
+        }
+
         // 39.2
     }
 
