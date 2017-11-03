@@ -34,7 +34,12 @@ public class Printing {
     }
 
     public static void printTriangle(int size) {
-        // 39.4
+        int i =1;
+        while (i<=size){
+            printStars(i);
+            System.out.println("");
+            i++;
+        }
     }
 
     public static void main(String[] args) {
