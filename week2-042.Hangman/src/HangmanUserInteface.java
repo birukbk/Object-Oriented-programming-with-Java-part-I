@@ -7,13 +7,26 @@ public class HangmanUserInteface {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         Hangman hangman = new Hangman();
-
+        
         System.out.println("***********");
         System.out.println("* HANGMAN  *");
         System.out.println("***********");
         System.out.println("");
         printMenu();
         System.out.println("");
+        while (hangman.gameOn()){
+            // printMenu();
+            System.out.println("Type a command: ");
+            String command = reader.nextLine();
+            if (command.equals("quit")){
+                break;
+            }
+
+
+
+
+
+        }
 
         // PROGRAM YOUR SOLUTION HERE
 
