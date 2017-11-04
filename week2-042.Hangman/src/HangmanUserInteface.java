@@ -7,7 +7,7 @@ public class HangmanUserInteface {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         Hangman hangman = new Hangman();
-        
+
         System.out.println("***********");
         System.out.println("* HANGMAN  *");
         System.out.println("***********");
@@ -20,6 +20,9 @@ public class HangmanUserInteface {
             String command = reader.nextLine();
             if (command.equals("quit")){
                 break;
+            }
+            if (command.length()==1){
+                hangman.guess(command);
             }
 
 
