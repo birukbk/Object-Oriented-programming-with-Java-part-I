@@ -18,6 +18,9 @@ public class HangmanUserInteface {
             // printMenu();
             System.out.println("Type a command: ");
             String command = reader.nextLine();
+            if (command.isEmpty()){
+                printMenu();
+            }
             if (command.equals("quit")){
                 break;
             }
