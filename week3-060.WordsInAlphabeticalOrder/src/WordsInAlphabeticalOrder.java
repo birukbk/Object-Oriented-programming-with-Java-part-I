@@ -7,9 +7,12 @@ public class WordsInAlphabeticalOrder {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        String  typedWord = reader.nextLine();
+
         ArrayList<String> words = new ArrayList<String>();
         while (true){
+            System.out.println("type a word :");
+            String  typedWord = reader.nextLine();
+
             if (typedWord.isEmpty()){
                 break;
             }
@@ -17,12 +20,13 @@ public class WordsInAlphabeticalOrder {
             {
                 words.add(typedWord);
             }
-            System.out.println("you typed the following words: ");
-            Collections.sort(words);
-            for (String word: words) {
-                System.out.println(word);
 
-            }
+        }
+        System.out.println("you typed the following words: ");
+        Collections.sort(words);
+        for (String word: words) {
+            System.out.println(word);
+
         }
     }
 }
