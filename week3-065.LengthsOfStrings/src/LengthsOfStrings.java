@@ -3,8 +3,11 @@ import java.util.ArrayList;
 public class LengthsOfStrings {
     public static ArrayList<Integer> lengths(ArrayList<String> list) {
         ArrayList<Integer> lengthList = new ArrayList<Integer>();
-        // write code here
-        
+        for (String word:list
+             ) {
+            lengthList.add(word.length());
+
+        }
         return lengthList;
     }
 
