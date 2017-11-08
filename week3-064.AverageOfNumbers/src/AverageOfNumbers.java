@@ -3,15 +3,19 @@ import java.util.ArrayList;
 
 public class AverageOfNumbers {
 
-    // Copy here the method sum from previous assignment
     public static int sum(ArrayList<Integer> list) {
-        return 0;
+        Integer sum = 0;
+        for (Integer number: list
+                ) {
+            sum+=number;
+        }
+        return sum;
     }
     
 
     public static double average(ArrayList<Integer> list) {
-        // write code here
-        return 0;
+        double average = sum(list)/((double)list.size());
+        return average;
     }
 
     public static void main(String[] args) {
