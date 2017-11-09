@@ -13,5 +13,14 @@ public class Menu {
             this.meals.add(meal);
         }
     }
+    public void printMeals(){
+        for (String meal:meals
+             ) {
+            System.out.println(meal);
 
+        }
+    }
+    public void clearMenu(){
+        this.meals.clear();
+    }
 }
