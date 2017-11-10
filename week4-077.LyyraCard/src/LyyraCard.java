@@ -7,4 +7,12 @@ public class LyyraCard {
     public String toString(){
         return "The card has " + this.balace + " euros";
     }
+    public void payEconomical(){
+        this.balace -= 2.50;
+
+    }
+    public void payGourmet(){
+        this.balace -= 4.0;
+
+    }
 }
