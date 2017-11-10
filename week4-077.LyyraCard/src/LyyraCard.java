@@ -8,11 +8,16 @@ public class LyyraCard {
         return "The card has " + this.balace + " euros";
     }
     public void payEconomical(){
-        this.balace -= 2.50;
+        if (this.balace>= 2.50){
+            this.balace -= 2.50;
+        }
+
 
     }
     public void payGourmet(){
-        this.balace -= 4.0;
+        if (this.balace>=4.0){
+            this.balace -= 4.0;
+        }
 
     }
 }
