@@ -18,6 +18,14 @@ public class LyyraCard {
         if (this.balace>=4.0){
             this.balace -= 4.0;
         }
+    }
+    public void loadMoney(double amount) {
+        if (this.balace + amount>=150){
+            this.balace = 150;
+        }
+        else {
+            this.balace +=amount;
+        }
 
     }
 }
