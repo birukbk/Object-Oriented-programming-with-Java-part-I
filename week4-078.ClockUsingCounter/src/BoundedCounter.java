@@ -18,7 +18,14 @@ public class BoundedCounter {
     }
 
     public String toString(){
-        return  "The counter is : "+ this.value;
+        if (this.value<10){
+            return  "The counter is : "+ "0"+this.value;
+
+        }
+        else {
+            return  "The counter is : "+ this.value;
+
+        }
 
     }
 }
