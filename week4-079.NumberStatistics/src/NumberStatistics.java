@@ -17,4 +17,10 @@ public class NumberStatistics {
     public int amountOfNumbers() {
         return addedNumberCounter;
     }
+    public int sum(){
+        return amountOfNumbers;
+    }
+    public double average(){
+        return (double) amountOfNumbers/addedNumberCounter;
+    }
 }
