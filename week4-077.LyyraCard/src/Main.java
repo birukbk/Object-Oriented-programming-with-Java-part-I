@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Brian: " + brian.toString());
         pekka.payEconomical();
         pekka.payEconomical();
-        
+
         brian.loadMoney(50);
 
         System.out.println("Pekka: " + pekka.toString());
