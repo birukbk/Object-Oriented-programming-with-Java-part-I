@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args)  {
+    public static void main(String[] args){
         Scanner reader = new Scanner(System.in);
         BoundedCounter seconds = new BoundedCounter(59);
         BoundedCounter minutes = new BoundedCounter(59);
@@ -27,7 +27,9 @@ public class Main {
                 minutes.next();
                 if (minutes.getValue() == 0.00) {
                     hours.next();
+                    break;
                 }
+
             }
             i++;
         }
