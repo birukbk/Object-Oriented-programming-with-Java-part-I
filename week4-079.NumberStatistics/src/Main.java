@@ -3,7 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        // Write test code here
+        NumberStatistics stats = new NumberStatistics();
+        stats.addNumber(3);
+        stats.addNumber(5);
+        stats.addNumber(1);
+        stats.addNumber(2);
+        System.out.println("Amount: " + stats.amountOfNumbers());
+
+
         // Remember to remove all the extra code when doing assignments  79.3 and 79.4
 
         // Define three NumberStatistics objects in your program:
