@@ -19,13 +19,20 @@ public class BoundedCounter {
 
     public String toString(){
         if (this.value<10){
-            return  "The counter is : "+ "0"+this.value;
-
+            return  ""+ "0"+this.value;
         }
         else {
-            return  "The counter is : "+ this.value;
-
+            return  ""+ this.value;
         }
 
+    }
+
+    public int getValue(){
+        return this.value;
+    }
+
+    public void setValue(int value) {
+        if (value >= 0 && value <= upperBound)
+            this.value = value;
     }
 }
