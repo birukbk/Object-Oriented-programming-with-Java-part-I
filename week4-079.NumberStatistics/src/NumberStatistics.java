@@ -21,6 +21,7 @@ public class NumberStatistics {
         return amountOfNumbers;
     }
     public double average(){
-        return (double) amountOfNumbers/addedNumberCounter;
+        if (this.addedNumberCounter==0) return 0;
+        else return (double) amountOfNumbers/addedNumberCounter;
     }
 }
