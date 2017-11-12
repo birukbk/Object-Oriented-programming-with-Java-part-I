@@ -1,32 +1,60 @@
 public class Counter {
-    private int numberCounter;
-    private boolean cheack= true;
 
+    private int value;
+    private boolean check;
+
+    public Counter(){
+        this(0,false);
+    }
     public Counter(int startingValue, boolean check){
-        if (startingValue<0) check= false;
-        this.numberCounter = startingValue;
-
+        this.value = startingValue;
+        this.check = check;
     }
     public Counter(int startingValue){
-        this.numberCounter = startingValue;
-
+        this(startingValue, false);
     }
     public Counter(boolean check){
-        if (check==true) this.numberCounter=0;
-    }
-    public Counter(){
-        this.numberCounter=0;
+        this(0, check);
     }
 
     public int value(){
-        return this.numberCounter;
+        return this.value;
     }
     public void increase(){
-        this.numberCounter++;
+        this.value++;
     }
     public void decrease(){
-        if (this.numberCounter>0 && cheack==true)  this.numberCounter--;
+        if (check){
+            if (value > 0) {
+                this.value--;
+            }
+        }else{
+            this.value--;
+        }
+    }
 
+    public void increase(int increaseAmount){
+        if (increaseAmount > 0)
+            this.value += increaseAmount;
+    }
+
+    public void decrease(int decreaseAmount) {
+        if (decreaseAmount > 0) {
+            if (check) {
+                if (decreaseAmount <= this.value) {
+                    this.value -= decreaseAmount;
+                } else {
+                    this.value = 0;
+                }
+            }else{
+                this.value -= decreaseAmount;
+            }
+        }
+    }
+
+
+    public String toString(){
+        return "Value: " + value;
     }
 
 }
