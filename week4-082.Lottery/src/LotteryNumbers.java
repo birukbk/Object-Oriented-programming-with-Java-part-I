@@ -5,7 +5,6 @@ public class LotteryNumbers {
     private ArrayList<Integer> numbers;
 
     public LotteryNumbers() {
-        // Draw numbers as LotteryNumbers is created
         this.drawNumbers();
     }
 
@@ -14,13 +13,18 @@ public class LotteryNumbers {
     }
 
     public void drawNumbers() {
-        // We'll format a list for the numbers
         this.numbers = new ArrayList<Integer>();
-        // Write the number drawing here using the method containsNumber()
+        Random random = new Random();
+        int draw;
+        while (this.numbers.size() < 7){
+            draw = random.nextInt(40);
+            if (draw > 0 && !containsNumber(draw)){
+                this.numbers.add(draw);
+            }
+        }
     }
 
     public boolean containsNumber(int number) {
-        // Test here if the number is already in the drawn numbers
-        return true;
+        return this.numbers.contains(number);
     }
 }

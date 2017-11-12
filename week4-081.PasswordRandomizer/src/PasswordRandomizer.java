@@ -4,13 +4,11 @@ public class PasswordRandomizer {
     private int length;
 
     public PasswordRandomizer(int length) {
-        // Initialize the variable
         this.length = length;
 
     }
 
     public String createPassword() {
-        // write code that returns a randomized password
         Random random  = new Random();
         String password = "";
         int index;
