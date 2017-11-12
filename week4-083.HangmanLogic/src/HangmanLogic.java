@@ -24,6 +24,12 @@ public class HangmanLogic {
     }
 
     public void guessLetter(String letter) {
+        if (!word.contains(letter) && !guessedLetters.contains(letter)){
+            numberOfFaults++;
+        }
+        if (!guessedLetters.contains(letter)){
+            guessedLetters += letter;
+        }
         // program here the functionality for making a guess
 
         // if the letter has already been guessed, nothing happens
