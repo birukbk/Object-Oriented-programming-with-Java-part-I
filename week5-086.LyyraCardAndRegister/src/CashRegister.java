@@ -21,10 +21,10 @@ public class CashRegister {
         return false;
     }
     public double payEconomical(double cashGiven) {
-        if (cashGiven>=2.50){
-            this.cashInRegister+= 2.50;
+        if (cashGiven>=2.5){
+            this.cashInRegister+= 2.5;
             this.economicalSold++;
-            return cashGiven-2.50;
+            return cashGiven - 2.5;
         }
         return cashGiven;
     }

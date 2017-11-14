@@ -10,5 +10,12 @@ public class Apartment {
         this.squareMeters = squareMeters;
         this.pricePerSquareMeter = pricePerSquareMeter;
     }
+
+    public boolean larger(Apartment otherApartment){
+        if (this.squareMeters> otherApartment.squareMeters){
+            return true;
+        }
+        else return false;
+    }
     
 }
