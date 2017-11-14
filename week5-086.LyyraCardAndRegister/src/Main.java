@@ -3,15 +3,21 @@ public class Main {
 
     public static void main(String[] args) {
         CashRegister unicafeExactum = new CashRegister();
+        System.out.println( unicafeExactum );
 
-        double theChange = unicafeExactum.payEconomical(10);
-        System.out.println("the change was " + theChange );
+        LyyraCard cardOfJim = new LyyraCard(2);
 
-        theChange = unicafeExactum.payEconomical(5);
-        System.out.println("the change was "  + theChange );
+        System.out.println("the card balance " + cardOfJim.balance() + " euros");
 
-        theChange = unicafeExactum.payGourmet(4);
-        System.out.println("the change was "  + theChange );
+        boolean succeeded = unicafeExactum.payGourmet(cardOfJim);
+        System.out.println("payment success: " + succeeded);
+
+        unicafeExactum.loadMoneyToCard(cardOfJim, 100);
+
+        succeeded = unicafeExactum.payGourmet(cardOfJim);
+        System.out.println("payment success: " + succeeded);
+
+        System.out.println("the card balance " + cardOfJim.balance() + " euros");
 
         System.out.println( unicafeExactum );
     }
