@@ -27,5 +27,13 @@ public class Apartment {
         else return otherApartment.priceOfApartment - this.priceOfApartment;
 
     }
+
+    public boolean moreExpensiveThan(Apartment otherApartment){
+        if (this.priceOfApartment> otherApartment.priceOfApartment) {
+            return true;
+        }
+    }else {
+        return false;
+    }
     
 }
