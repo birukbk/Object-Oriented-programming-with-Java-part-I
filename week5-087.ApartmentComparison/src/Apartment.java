@@ -28,12 +28,12 @@ public class Apartment {
 
     }
 
-    public boolean moreExpensiveThan(Apartment otherApartment){
-        if (this.priceOfApartment> otherApartment.priceOfApartment) {
+    public boolean moreExpensiveThan(Apartment otherApartment) {
+        if (this.priceOfApartment > otherApartment.priceOfApartment) {
             return true;
+        } else {
+            return false;
         }
-    }else {
-        return false;
     }
     
 }
