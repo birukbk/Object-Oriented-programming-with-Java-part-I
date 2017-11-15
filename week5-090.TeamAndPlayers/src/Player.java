@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Player {
     private String playerName;
     private int amountOfGoal;

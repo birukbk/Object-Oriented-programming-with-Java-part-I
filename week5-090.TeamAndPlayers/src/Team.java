@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Team {
     private String name;
     private ArrayList<Player> listOfPlayers = new ArrayList<Player>();
-    int maxTeamSize;
+    private int maxTeamSize;
 
     public Team(String name){
         this.name = name;
@@ -28,6 +28,15 @@ public class Team {
 
     public int size(){
         return listOfPlayers.size();
+    }
+
+    public int goals(){
+        int totalNumberOfGoalsForAllPlayers=0;
+        for (Player player:listOfPlayers
+             ) {
+            totalNumberOfGoalsForAllPlayers += player.goals();
+        }
+        return totalNumberOfGoalsForAllPlayers;
     }
 
 }
