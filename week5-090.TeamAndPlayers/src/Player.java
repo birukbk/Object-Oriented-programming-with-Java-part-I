@@ -17,6 +17,6 @@ public class Player {
         return this.amountOfGoal;
     }
     public String toString(){
-        return "Player: " + this.playerName + "," + "goals " + this.amountOfGoal;
+        return this.playerName + "," + "goals " + this.amountOfGoal;
     }
 }
