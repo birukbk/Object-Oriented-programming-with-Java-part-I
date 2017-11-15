@@ -14,6 +14,6 @@ public class Student {
         return this.studentNumber;
     }
     public String toString(){
-        return this.name + "(" + this.studentNumber +")";
+        return this.name + " (" + this.studentNumber +")";
     }
 }
