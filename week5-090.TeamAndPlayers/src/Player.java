@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class Player {
     private String playerName;
     private int amountOfGoal;
+
 
     public Player(String playerName, int amountOfGoal){
         this.playerName = playerName;
@@ -19,4 +22,6 @@ public class Player {
     public String toString(){
         return this.playerName + "," + "goals " + this.amountOfGoal;
     }
+
+
 }
