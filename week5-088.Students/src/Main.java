@@ -16,9 +16,9 @@ public class Main {
                 break;
             }
             System.out.println("Type student number: ");
-            String studentNmber = reader.nextLine();
+            String studentNumber = reader.nextLine();
 
-            students.add(new Student(studentName,studentNmber));
+            students.add(new Student(studentName,studentNumber));
         }
 
         for (Student student: students
