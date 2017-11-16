@@ -29,7 +29,13 @@ public class MyDate {
 
         return false;
     }
-   
+    public int differenceInYears(MyDate comparedDate) {
+        int thisDate = convertToDate(this);
+        int otherDate = convertToDate(comparedDate);
+
+        int differenceInDates = Math.abs(thisDate - otherDate);
+        return differenceInDates / 360;
+    }
     public int convertToDate(MyDate date){
         int inDate = date.day + date.month * 30 + date.year * 12 * 30;
         return inDate;
