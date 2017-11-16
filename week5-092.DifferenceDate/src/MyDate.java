@@ -29,5 +29,10 @@ public class MyDate {
 
         return false;
     }
+   
+    public int convertToDate(MyDate date){
+        int inDate = date.day + date.month * 30 + date.year * 12 * 30;
+        return inDate;
+    }
 
 }
