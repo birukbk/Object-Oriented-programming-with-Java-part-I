@@ -31,5 +31,8 @@ public class MyDate {
 
         return false;
     }
+    public void advance(){
+        this.day++;
+    }
 
 }
