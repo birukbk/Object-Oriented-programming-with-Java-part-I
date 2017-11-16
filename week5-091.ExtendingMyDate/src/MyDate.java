@@ -37,7 +37,17 @@ public class MyDate {
         return false;
     }
     public void advance(){
-        this.day++;
+        if (this.day == 30){
+            this.day = 1;
+            if (this.month == 12) {
+                this.month = 1;
+                this.year++;
+            }else{
+                this.month++;
+            }
+        }else{
+            this.day++;
+        }
     }
     public void advance(int numberOfDays){
         int i =0;
