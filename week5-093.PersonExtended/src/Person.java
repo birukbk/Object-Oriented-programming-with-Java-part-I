@@ -23,8 +23,7 @@ public class Person {
     }
     
     public boolean olderThan(Person compared) {
-        // compare the ages based on birthdays
-        return false;
+        return birthday.earlier(compared.birthday);
     }
     
     public String getName() {
