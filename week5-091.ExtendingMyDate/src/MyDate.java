@@ -34,5 +34,12 @@ public class MyDate {
     public void advance(){
         this.day++;
     }
+    public void advance(int numberOfDays){
+        int i =0;
+        while (i<=numberOfDays){
+            advance();
+            i++;
+        }
+    }
 
 }
