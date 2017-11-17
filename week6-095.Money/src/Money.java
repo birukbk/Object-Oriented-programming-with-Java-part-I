@@ -32,5 +32,9 @@ public class Money {
 
         return euros + "." + zero + cents + "e";
     }
+    public Money plus(Money added){
+        Money sum = new Money(this.euros+added.euros,this.cents+ added.cents);
+        return sum;
+    }
 
 }
