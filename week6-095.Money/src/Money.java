@@ -46,5 +46,12 @@ public class Money {
         return false;
     }
 
+    public Money minus(Money decremented){
+        if (this.euros < decremented.euros) return  new Money(0,0);
+        else {
+            return new Money(this.euros-decremented.euros,this.cents-decremented.cents);
+        }
+    }
+
 
 }
