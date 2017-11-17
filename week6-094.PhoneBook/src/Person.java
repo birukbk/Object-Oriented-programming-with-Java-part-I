@@ -13,4 +13,11 @@ public class Person {
     public String getNumber(){
         return this.number;
     }
+
+    public void changeNumber(String newNumber) {
+        this.number = newNumber;
+    }
+    public String toString(){
+        return this.name + " number: " + this.number;
+    }
 }
