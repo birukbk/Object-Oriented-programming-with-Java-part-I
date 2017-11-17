@@ -2,13 +2,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        Person pekka = new Person("Pekka Mikkola", "040-123123");
+        Phonebook phonebook = new Phonebook();
 
-        System.out.println(pekka.getName());
-        System.out.println(pekka.getNumber());
+        phonebook.add("Pekka Mikkola", "040-123123");
+        phonebook.add("Edsger Dijkstra", "045-456123");
+        phonebook.add("Donald Knuth", "050-222333");
 
-        System.out.println(pekka);
-        pekka.changeNumber("050-333444");
-        System.out.println(pekka);
+        phonebook.printAll();
     }
 }
