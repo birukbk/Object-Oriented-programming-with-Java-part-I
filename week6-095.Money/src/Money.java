@@ -46,12 +46,20 @@ public class Money {
         return false;
     }
 
-    public Money minus(Money decremented){
-        if (this.euros < decremented.euros) return  new Money(0,0);
-        else {
-            return new Money(this.euros-decremented.euros,this.cents-decremented.cents);
-        }
+    public int euroToCents(int euro, int cents){
+        return euro * 100 + cents;
     }
+
+    public Money minus(Money decremented){
+        int thisMoney = euroToCents(this.euros, this.cents);
+        int thatMoney = euroToCents(decremented.euros, decremented.cents);
+        int newMoney = thisMoney - thatMoney;
+
+        if (newMoney < 0){
+            return new Money(0,0);
+        }
+        return new Money(0, newMoney);
+    }   
 
 
 }
