@@ -8,7 +8,11 @@ public class Main {
     }
 
     public static int sum(int[] array) {
-        // Write code here
-        return 0;
+        int sum=0;
+        for (int number:array) {
+            sum+=number;
+
+        }
+        return sum;
     }
 }
