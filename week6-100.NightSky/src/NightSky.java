@@ -38,6 +38,8 @@ public class NightSky {
         System.out.println();
     }
 
-
+    public int starsInLastPrint() {
+        return starsInLastPrint;
+    }
 }
 
