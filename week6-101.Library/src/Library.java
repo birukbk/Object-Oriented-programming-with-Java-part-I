@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Library {
-    ArrayList<Book> listOfBooks;
+    private ArrayList<Book> listOfBooks;
     public Library(){
         this.listOfBooks = new ArrayList<Book>();
 
@@ -20,7 +20,7 @@ public class Library {
         ArrayList<Book> found = new ArrayList<Book>();
 
         for (Book book:listOfBooks) {
-            if (book.title().contains(title)){
+            if(StringUtils.included(book.title(), title)){
                 found.add(book);
             }
         }
